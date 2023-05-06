@@ -1,0 +1,11 @@
+services:
+  nextjs:
+    platform: linux/amd64
+    build: ./
+    image: eddiefahrenheit/ottrmate-web-nextjs
+  nginx:
+    platform: linux/amd64
+    build: ./nginx/
+    image: eddiefahrenheit/ottrmate-web-nginx
+    ports:
+      - 80:80
