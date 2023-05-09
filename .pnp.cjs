@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:13.4.1"],\
             ["next", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:13.4.1"],\
             ["postcss", "npm:8.4.23"],\
+            ["postcss-import", "virtual:9311a8c9fc2fa723a363b04526c261872a9280ff9a5542cdc84255404f48ad5c7925fba5ed45881f7890d0d836206f3c952ef9a86f561b44b7d6e17f15c70e68#npm:15.1.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:18.2.0"],\
             ["tailwindcss", "npm:3.3.2"],\
@@ -3706,6 +3707,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:13.4.1"],\
             ["next", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:13.4.1"],\
             ["postcss", "npm:8.4.23"],\
+            ["postcss-import", "virtual:9311a8c9fc2fa723a363b04526c261872a9280ff9a5542cdc84255404f48ad5c7925fba5ed45881f7890d0d836206f3c952ef9a86f561b44b7d6e17f15c70e68#npm:15.1.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:18.2.0"],\
             ["tailwindcss", "npm:3.3.2"],\
