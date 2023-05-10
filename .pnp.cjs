@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@mdi/js", "npm:7.2.96"],\
             ["@tailwindcss/forms", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:0.5.3"],\
             ["@types/node", "npm:20.1.0"],\
             ["@types/react", "npm:18.2.5"],\
@@ -216,6 +217,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@jridgewell/trace-mapping", "npm:0.3.18"],\
             ["@jridgewell/resolve-uri", "npm:3.1.0"],\
             ["@jridgewell/sourcemap-codec", "npm:1.4.14"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@mdi/js", [\
+        ["npm:7.2.96", {\
+          "packageLocation": "./.yarn/cache/@mdi-js-npm-7.2.96-27e14692c7-f8e22da5d9.zip/node_modules/@mdi/js/",\
+          "packageDependencies": [\
+            ["@mdi/js", "npm:7.2.96"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3698,6 +3708,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["ottrmate-web", "workspace:."],\
+            ["@mdi/js", "npm:7.2.96"],\
             ["@tailwindcss/forms", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:0.5.3"],\
             ["@types/node", "npm:20.1.0"],\
             ["@types/react", "npm:18.2.5"],\
