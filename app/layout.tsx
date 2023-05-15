@@ -1,11 +1,10 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import "./css/main.css";
+import LayoutAuthenticated from "../src/layout/Authenticated";
 
 export const metadata = {
   title: "Ottrmate",
-  description: "Ottrmate - search for and customize GPT to your business needs",
+  description:
+    "Ottrmate - search models and customize GPT to your business needs",
 };
 
 export default function RootLayout({
@@ -15,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`dark overflow-hidden lg:overflow-visible`}>
+        <LayoutAuthenticated>{children}</LayoutAuthenticated>
+      </body>
     </html>
   );
 }
