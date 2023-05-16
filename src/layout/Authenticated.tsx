@@ -39,9 +39,8 @@ export default function LayoutAuthenticated({
             size="24"
           />
         </NavBarItemPlain>
-
-        {children}
       </NavBar>
+      {children}
     </div>
   );
 }
