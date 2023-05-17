@@ -13,7 +13,7 @@ import {
 } from "@mdi/js";
 import { MenuNavBarItem } from "../interfaces";
 
-const menuNavBar: MenuNavBarItem[] = [
+const AuthenticatedMenuNavBar: MenuNavBarItem[] = [
   {
     icon: mdiMenu,
     label: "Sample menu",
@@ -32,32 +32,6 @@ const menuNavBar: MenuNavBarItem[] = [
       {
         icon: mdiCrop,
         label: "Item Last",
-      },
-    ],
-  },
-  {
-    isCurrentUser: true,
-    menu: [
-      {
-        icon: mdiAccount,
-        label: "My Profile",
-        href: "/profile",
-      },
-      {
-        icon: mdiCogOutline,
-        label: "Settings",
-      },
-      {
-        icon: mdiEmail,
-        label: "Messages",
-      },
-      {
-        isDivider: true,
-      },
-      {
-        icon: mdiLogout,
-        label: "Log Out",
-        isLogout: true,
       },
     ],
   },
@@ -87,6 +61,32 @@ const menuNavBar: MenuNavBarItem[] = [
     isDesktopNoLabel: true,
     isLogout: true,
   },
+  {
+    isCurrentUser: true,
+    menu: [
+      {
+        icon: mdiAccount,
+        label: "My Profile",
+        href: "/profile",
+      },
+      {
+        icon: mdiCogOutline,
+        label: "Settings",
+      },
+      {
+        icon: mdiEmail,
+        label: "Messages",
+      },
+      {
+        isDivider: true,
+      },
+      {
+        icon: mdiLogout,
+        label: "Log Out",
+        isLogout: true,
+      },
+    ],
+  },
 ];
 
-export default menuNavBar;
+export default AuthenticatedMenuNavBar;

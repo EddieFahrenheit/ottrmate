@@ -7,7 +7,7 @@ import {
   mdiMonitorCellphone,
   mdiReload,
 } from "@mdi/js";
-import SectionTitleLineWithButton from "../src/components/SectionTitleLineWithButton";
+import SectionTitleLineWithButton from "../components/SectionTitleLineWithButton";
 
 export default function Home() {
   return (
