@@ -1,11 +1,10 @@
 import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import GitHubProvider from "next-auth/providers/github";
-
-const GITHUB_ID = process.env.GITHUB_ID as string;
-const GITHUB_SECRET = process.env.GITHUB_SECRET as string;
 
 export const authOptions: NextAuthOptions = {
+  pages: {
+    signIn: "/login",
+  },
   session: {
     strategy: "jwt",
   },
@@ -37,9 +36,9 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
-  callbacks: {
-    session({ session, token, user }) {
-      return session; // The return type will match the one returned in `useSession()`
-    },
-  },
+  // callbacks: {
+  //   session({ session, token, user }) {
+  //     return session; // The return type will match the one returned in `useSession()`
+  //   },
+  // },
 };

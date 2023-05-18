@@ -1,7 +1,8 @@
-import React from "react";
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
+import { signOut } from "next-auth/react";
 import { mdiChevronUp, mdiChevronDown } from "@mdi/js";
+
 import BaseDivider from "../components/BaseDivider";
 import BaseIcon from "../components/BaseIcon";
 import UserAvatarCurrentUser from "../components/UserAvatarCurrentUser";
@@ -33,9 +34,11 @@ export default function NavBarItem({ item }: Props) {
 
   const itemLabel = item.isCurrentUser ? userName : item.label;
 
-  const handleMenuClick = () => {
+  const handleClick = () => {
     if (item.menu) {
       setIsDropdownActive(!isDropdownActive);
+    } else if (item.isLogout) {
+      signOut();
     }
   };
 
@@ -47,7 +50,7 @@ export default function NavBarItem({ item }: Props) {
             ? "bg-gray-100 dark:bg-slate-800 lg:bg-transparent lg:dark:bg-transparent p-3 lg:p-0"
             : ""
         }`}
-        onClick={handleMenuClick}
+        onClick={handleClick}
       >
         {item.isCurrentUser && (
           <UserAvatarCurrentUser className="w-6 h-6 mr-3 inline-flex" />

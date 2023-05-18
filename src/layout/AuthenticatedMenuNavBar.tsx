@@ -15,59 +15,11 @@ import { MenuNavBarItem } from "../interfaces";
 
 const AuthenticatedMenuNavBar: MenuNavBarItem[] = [
   {
-    icon: mdiMenu,
-    label: "Sample menu",
-    menu: [
-      {
-        icon: mdiClockOutline,
-        label: "Item One",
-      },
-      {
-        icon: mdiCloud,
-        label: "Item Two",
-      },
-      {
-        isDivider: true,
-      },
-      {
-        icon: mdiCrop,
-        label: "Item Last",
-      },
-    ],
-  },
-  {
-    icon: mdiThemeLightDark,
-    label: "Light/Dark",
-    isDesktopNoLabel: true,
-    isToggleLightDark: true,
-  },
-  {
-    icon: mdiGithub,
-    label: "GitHub",
-    isDesktopNoLabel: true,
-    href: "https://github.com/justboil/admin-one-react-tailwind",
-    target: "_blank",
-  },
-  {
-    icon: mdiVuejs,
-    label: "Vue version",
-    isDesktopNoLabel: true,
-    href: "https://github.com/justboil/admin-one-vue-tailwind",
-    target: "_blank",
-  },
-  {
-    icon: mdiLogout,
-    label: "Log out",
-    isDesktopNoLabel: true,
-    isLogout: true,
-  },
-  {
     isCurrentUser: true,
     menu: [
       {
         icon: mdiAccount,
         label: "My Profile",
-        href: "/profile",
       },
       {
         icon: mdiCogOutline,

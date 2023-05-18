@@ -1,8 +1,8 @@
 import {
+  mdiHomeAssistant,
   mdiAccountMultiple,
   mdiCartOutline,
   mdiChartPie,
-  mdiChartTimelineVariant,
   mdiGithub,
   mdiMonitorCellphone,
   mdiReload,
@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <section className={`p-6 xl:max-w-6xl xl:mx-auto`}>
       <SectionTitleLineWithButton
-        icon={mdiChartTimelineVariant}
-        title="Overview"
+        icon={mdiHomeAssistant}
+        title="Ottrmate"
         main
       ></SectionTitleLineWithButton>
     </section>
