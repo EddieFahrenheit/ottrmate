@@ -1,5 +1,9 @@
 import type { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import GitHubProvider from "next-auth/providers/github";
+
+const GITHUB_ID = process.env.GITHUB_ID as string;
+const GITHUB_SECRET = process.env.GITHUB_SECRET as string;
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -10,11 +14,10 @@ export const authOptions: NextAuthOptions = {
       name: "Ottrmate",
       credentials: {
         email: {
-          label: "email",
+          label: "Email",
           type: "email",
-          placeholder: "example@example.com",
         },
-        password: { label: "password", type: "password" },
+        password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
         const authResponse = await fetch(
@@ -28,6 +31,7 @@ export const authOptions: NextAuthOptions = {
           }
         );
         const user = await authResponse.json();
+        console.log("auth response: ", user);
         if (authResponse.ok && user) return user;
         else return null;
       },

@@ -6,17 +6,23 @@ import { mdiForwardburger, mdiBackburger, mdiMenu } from "@mdi/js";
 
 import NavBar from "./NavBar";
 import GuestMenuNavBar from "./GuestMenuNavBar";
+import AuthenticatedMenuNavBar from "./AuthenticatedMenuNavBar";
 import NavBarItemPlain from "./NavBarItemPlain";
 import BaseIcon from "../components/BaseIcon";
 
-export default function LayoutAuthenticated({
-  children,
-}: {
+import { Session } from "next-auth";
+
+interface LayoutProps {
   children: ReactNode;
-}) {
+  session: Session | null;
+}
+
+export default function Layout({ children, session }: LayoutProps) {
   const layoutAsidePadding = "xl:pl-60";
   const [isAsideMobileExpanded, setIsAsideMobileExpanded] = useState(false);
   const [isAsideLgActive, setIsAsideLgActive] = useState(false);
+
+  const NavBarMenuInUse = session ? AuthenticatedMenuNavBar : GuestMenuNavBar;
 
   return (
     <div
@@ -25,7 +31,8 @@ export default function LayoutAuthenticated({
       } pt-14 min-h-screen w-screen transition-position lg:w-auto bg-gray-50 dark:bg-slate-800 dark:text-slate-100`}
     >
       <NavBar
-        menu={GuestMenuNavBar}
+        session={session}
+        menu={NavBarMenuInUse}
         className={`${layoutAsidePadding} ${
           isAsideMobileExpanded ? "ml-60 lg:ml-0" : ""
         }`}

@@ -9,7 +9,7 @@ const GuestMenuNavBar: MenuNavBarItem[] = [
       {
         icon: mdiLogin,
         label: "Log In",
-        href: "/auth",
+        href: "/api/auth/signin",
       },
       {
         isDivider: true,

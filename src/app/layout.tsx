@@ -1,5 +1,8 @@
 import "./css/main.css";
-import LayoutAuthenticated from "../layout/Authenticated";
+import Layout from "../layout/Layout";
+
+import { getServerSession } from "next-auth";
+import { authOptions } from "../lib/auth";
 
 export const metadata = {
   title: "Ottrmate",
@@ -11,11 +14,13 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function RootLayout({ children }: LayoutProps) {
+export default async function RootLayout({ children }: LayoutProps) {
+  const session = await getServerSession(authOptions);
+
   return (
     <html lang="en">
       <body className={`dark overflow-hidden lg:overflow-visible`}>
-        <LayoutAuthenticated>{children}</LayoutAuthenticated>
+        <Layout session={session}>{children}</Layout>
       </body>
     </html>
   );
