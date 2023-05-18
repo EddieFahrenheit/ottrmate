@@ -1,7 +1,18 @@
-import { mdiAccountCircle, mdiLogin, mdiAccountEdit } from "@mdi/js";
+import {
+  mdiAccountCircle,
+  mdiLogin,
+  mdiAccountEdit,
+  mdiHomeCircle,
+} from "@mdi/js";
 import { MenuNavBarItem } from "../interfaces";
 
 const GuestMenuNavBar: MenuNavBarItem[] = [
+  {
+    icon: mdiHomeCircle,
+    label: "Home",
+    isDesktopNoLabel: true,
+    href: "/",
+  },
   {
     icon: mdiAccountCircle,
     label: "Account",

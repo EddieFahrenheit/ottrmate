@@ -1,19 +1,19 @@
 import {
-  mdiMenu,
-  mdiClockOutline,
-  mdiCloud,
-  mdiCrop,
   mdiAccount,
   mdiCogOutline,
   mdiEmail,
   mdiLogout,
-  mdiThemeLightDark,
-  mdiGithub,
-  mdiVuejs,
+  mdiHomeCircle,
 } from "@mdi/js";
 import { MenuNavBarItem } from "../interfaces";
 
 const AuthenticatedMenuNavBar: MenuNavBarItem[] = [
+  {
+    icon: mdiHomeCircle,
+    label: "Home",
+    isDesktopNoLabel: true,
+    href: "/",
+  },
   {
     isCurrentUser: true,
     menu: [
