@@ -2,7 +2,7 @@
 
 import React, { ReactNode, useState } from "react";
 import { mdiClose, mdiDotsVertical } from "@mdi/js";
-import { containerMaxW } from "../config";
+import { containerMaxW } from "../lib/config";
 import BaseIcon from "../components/BaseIcon";
 import NavBarItemPlain from "./NavBarItemPlain";
 import NavBarMenuList from "./NavBarMenuList";

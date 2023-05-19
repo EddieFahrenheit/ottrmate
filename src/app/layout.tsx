@@ -1,4 +1,4 @@
-import "./css/main.css";
+import "../css/main.css";
 import Layout from "../layout/Layout";
 
 import { getServerSession } from "next-auth";

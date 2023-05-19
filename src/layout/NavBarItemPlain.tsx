@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { basic } from "../styles";
+import { basic } from "../lib/styles";
 
 type Props = {
   display?: string;

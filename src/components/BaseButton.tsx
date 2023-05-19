@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { getButtonColor } from "../colors";
+import { getButtonColor } from "../lib/colors";
 import BaseIcon from "./BaseIcon";
 import type { ColorButtonKey } from "../interfaces";
 

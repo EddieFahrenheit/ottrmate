@@ -8,7 +8,7 @@ import BaseIcon from "../components/BaseIcon";
 import UserAvatarCurrentUser from "../components/UserAvatarCurrentUser";
 import NavBarMenuList from "./NavBarMenuList";
 import { MenuNavBarItem } from "../interfaces";
-import { basic } from "../styles";
+import { basic } from "../lib/styles";
 
 type Props = {
   item: MenuNavBarItem;

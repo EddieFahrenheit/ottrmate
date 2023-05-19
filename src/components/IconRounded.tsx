@@ -1,6 +1,6 @@
 import React from "react";
 import { ColorKey } from "../interfaces";
-import { colorsBgLight, colorsText } from "../colors";
+import { colorsBgLight, colorsText } from "../lib/colors";
 import BaseIcon from "./BaseIcon";
 
 type Props = {

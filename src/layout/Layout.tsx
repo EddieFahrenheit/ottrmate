@@ -1,16 +1,16 @@
 "use client";
 
-import { ReactNode, useEffect } from "react";
-import { useState } from "react";
+import { ReactNode, useState, useEffect } from "react";
 import { mdiForwardburger, mdiBackburger, mdiMenu } from "@mdi/js";
+import { Session } from "next-auth";
 
-import NavBar from "./NavBar";
-import GuestMenuNavBar from "./GuestMenuNavBar";
-import AuthenticatedMenuNavBar from "./AuthenticatedMenuNavBar";
 import NavBarItemPlain from "./NavBarItemPlain";
 import BaseIcon from "../components/BaseIcon";
+import NavBar from "./NavBar";
 
-import { Session } from "next-auth";
+import SearchBar from "./SearchBar";
+import GuestMenuNavBar from "./GuestMenuNavBar";
+import AuthenticatedMenuNavBar from "./AuthenticatedMenuNavBar";
 
 interface LayoutProps {
   children: ReactNode;
@@ -45,6 +45,13 @@ export default function Layout({ children, session }: LayoutProps) {
             size="24"
           />
         </NavBarItemPlain>
+        <NavBarItemPlain
+          display="hidden lg:flex xl:hidden"
+          onClick={() => setIsAsideLgActive(true)}
+        >
+          <BaseIcon path={mdiMenu} size="24" />
+        </NavBarItemPlain>
+        <SearchBar />
       </NavBar>
       {children}
     </div>
