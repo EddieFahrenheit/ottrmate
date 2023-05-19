@@ -31,7 +31,6 @@ export default function Layout({ children, session }: LayoutProps) {
       } pt-14 min-h-screen w-screen transition-position lg:w-auto bg-gray-50 dark:bg-slate-800 dark:text-slate-100`}
     >
       <NavBar
-        session={session}
         menu={NavBarMenuInUse}
         className={`${layoutAsidePadding} ${
           isAsideMobileExpanded ? "ml-60 lg:ml-0" : ""

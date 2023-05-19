@@ -7,23 +7,14 @@ import BaseIcon from "../components/BaseIcon";
 import NavBarItemPlain from "./NavBarItemPlain";
 import NavBarMenuList from "./NavBarMenuList";
 import { MenuNavBarItem } from "../interfaces";
-import { LoginButton, LogoutButton } from "./AuthButtons";
-
-import { Session } from "next-auth";
 
 type Props = {
   menu: MenuNavBarItem[];
   className: string;
-  session: Session | null;
   children: ReactNode;
 };
 
-export default function NavBar({
-  menu,
-  className = "",
-  session,
-  children,
-}: Props) {
+export default function NavBar({ menu, className = "", children }: Props) {
   const [isMenuNavBarActive, setIsMenuNavBarActive] = useState(false);
 
   const handleMenuNavBarToggleClick = () => {
