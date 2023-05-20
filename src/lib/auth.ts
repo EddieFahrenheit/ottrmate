@@ -29,16 +29,22 @@ export const authOptions: NextAuthOptions = {
             body: JSON.stringify({ user: credentials }),
           }
         );
-        const user = await authResponse.json();
-        console.log("auth response: ", user);
-        if (authResponse.ok && user) return user;
-        else return null;
+        const JWT = authResponse.headers.get("authorization");
+        if (authResponse.ok && JWT) {
+          const user = await authResponse.json();
+          user.authorization = JWT;
+          return user;
+        } else return null;
       },
     }),
   ],
-  // callbacks: {
-  //   session({ session, token, user }) {
-  //     return session; // The return type will match the one returned in `useSession()`
-  //   },
-  // },
+  callbacks: {
+    async jwt({ token, user }) {
+      return { ...token };
+    },
+    async session({ session, token, user }) {
+      session.user = token;
+      return session; // The return type will match the one returned in `useSession()`
+    },
+  },
 };

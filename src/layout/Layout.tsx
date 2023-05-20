@@ -14,7 +14,7 @@ import AuthenticatedMenuNavBar from "./AuthenticatedMenuNavBar";
 
 interface LayoutProps {
   children: ReactNode;
-  session: Session | null;
+  session?: Session;
 }
 
 export default function Layout({ children, session }: LayoutProps) {
@@ -51,7 +51,7 @@ export default function Layout({ children, session }: LayoutProps) {
         >
           <BaseIcon path={mdiMenu} size="24" />
         </NavBarItemPlain>
-        <SearchBar />
+        {session ? <SearchBar session={session} /> : <SearchBar />}
       </NavBar>
       {children}
     </div>

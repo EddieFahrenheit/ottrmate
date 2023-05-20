@@ -16,11 +16,14 @@ interface LayoutProps {
 
 export default async function RootLayout({ children }: LayoutProps) {
   const session = await getServerSession(authOptions);
-
   return (
     <html lang="en">
       <body className={`dark overflow-hidden lg:overflow-visible`}>
-        <Layout session={session}>{children}</Layout>
+        {session ? (
+          <Layout session={session}>{children}</Layout>
+        ) : (
+          <Layout>{children}</Layout>
+        )}
       </body>
     </html>
   );
