@@ -14,7 +14,7 @@ export default function SearchBar({ session }: SearchBarProps) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          //Accept: "application/json",
+          Accept: "application/json",
           Authorization: JWT,
         },
         body: JSON.stringify({
