@@ -7,6 +7,8 @@ import { Session } from "next-auth";
 import NavBarItemPlain from "./NavBarItemPlain";
 import BaseIcon from "../components/BaseIcon";
 import NavBar from "./NavBar";
+import menuAside from "../lib/menuAside";
+import AsideMenu from "./AsideMenu";
 
 import SearchBar from "./SearchBar";
 import GuestMenuNavBar from "./GuestMenuNavBar";
@@ -53,6 +55,12 @@ export default function Layout({ children, session }: LayoutProps) {
         </NavBarItemPlain>
         {session ? <SearchBar session={session} /> : <SearchBar />}
       </NavBar>
+      <AsideMenu
+        isAsideMobileExpanded={isAsideMobileExpanded}
+        isAsideLgActive={isAsideLgActive}
+        menu={menuAside}
+        onAsideLgClose={() => setIsAsideLgActive(false)}
+      />
       {children}
     </div>
   );
