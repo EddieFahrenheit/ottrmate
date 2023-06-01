@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mdi/js", "npm:7.2.96"],\
             ["@tailwindcss/forms", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:0.5.3"],\
             ["@types/node", "npm:20.1.0"],\
+            ["@types/numeral", "npm:2.0.2"],\
             ["@types/react", "npm:18.2.5"],\
             ["@types/react-dom", "npm:18.2.4"],\
             ["autoprefixer", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:10.4.14"],\
@@ -39,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["formik", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:2.2.9"],\
             ["next", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:13.4.2"],\
             ["next-auth", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:4.22.1"],\
+            ["numeral", "npm:2.0.6"],\
             ["postcss", "npm:8.4.23"],\
             ["postcss-import", "virtual:9311a8c9fc2fa723a363b04526c261872a9280ff9a5542cdc84255404f48ad5c7925fba5ed45881f7890d0d836206f3c952ef9a86f561b44b7d6e17f15c70e68#npm:15.1.0"],\
             ["react", "npm:18.2.0"],\
@@ -474,6 +476,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-20.1.0-c5561d67cd-c6d9afa9aa.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:20.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/numeral", [\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/@types-numeral-npm-2.0.2-9d4395fc9c-d8b778ef5d.zip/node_modules/@types/numeral/",\
+          "packageDependencies": [\
+            ["@types/numeral", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3678,6 +3689,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["numeral", [\
+        ["npm:2.0.6", {\
+          "packageLocation": "./.yarn/cache/numeral-npm-2.0.6-2c27ceaa3c-89f0111165.zip/node_modules/numeral/",\
+          "packageDependencies": [\
+            ["numeral", "npm:2.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["oauth", [\
         ["npm:0.9.15", {\
           "packageLocation": "./.yarn/cache/oauth-npm-0.9.15-a6aae972bc-957c0d8d85.zip/node_modules/oauth/",\
@@ -3887,6 +3907,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mdi/js", "npm:7.2.96"],\
             ["@tailwindcss/forms", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:0.5.3"],\
             ["@types/node", "npm:20.1.0"],\
+            ["@types/numeral", "npm:2.0.2"],\
             ["@types/react", "npm:18.2.5"],\
             ["@types/react-dom", "npm:18.2.4"],\
             ["autoprefixer", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:10.4.14"],\
@@ -3895,6 +3916,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["formik", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:2.2.9"],\
             ["next", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:13.4.2"],\
             ["next-auth", "virtual:fd8ad028a270f20ce60651bf08321e767f18f87ce240319404c5912a1849987f32cc9d54e7415c94ee553bec310db91a002767b9977e44b7cebdf937a153eb8e#npm:4.22.1"],\
+            ["numeral", "npm:2.0.6"],\
             ["postcss", "npm:8.4.23"],\
             ["postcss-import", "virtual:9311a8c9fc2fa723a363b04526c261872a9280ff9a5542cdc84255404f48ad5c7925fba5ed45881f7890d0d836206f3c952ef9a86f561b44b7d6e17f15c70e68#npm:15.1.0"],\
             ["react", "npm:18.2.0"],\

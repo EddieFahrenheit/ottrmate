@@ -346,6 +346,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/numeral@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@types/numeral@npm:2.0.2"
+  checksum: d8b778ef5d1b20cb5919fb2cf41108b324ccfaeccb0238caaf54bd9d4bffbbd57d7b860844f05831fb356a5dc0115b477891531325180a670076036ee1b4a8ca
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.5
   resolution: "@types/prop-types@npm:15.7.5"
@@ -3027,6 +3034,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"numeral@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "numeral@npm:2.0.6"
+  checksum: 89f011116539692bf53fde380adeb0579623d00f782703c71c0062d4a8686770c404a041ff4eef454de53925a9f75bba1fa52726057b13d40473f707730b07c2
+  languageName: node
+  linkType: hard
+
 "oauth@npm:^0.9.15":
   version: 0.9.15
   resolution: "oauth@npm:0.9.15"
@@ -3213,6 +3227,7 @@ __metadata:
     "@mdi/js": ^7.2.96
     "@tailwindcss/forms": ^0.5.3
     "@types/node": 20.1.0
+    "@types/numeral": ^2.0.2
     "@types/react": 18.2.5
     "@types/react-dom": 18.2.4
     autoprefixer: 10.4.14
@@ -3221,6 +3236,7 @@ __metadata:
     formik: ^2.2.9
     next: latest
     next-auth: ^4.22.1
+    numeral: ^2.0.6
     postcss: 8.4.23
     postcss-import: ^15.1.0
     react: 18.2.0
