@@ -30,8 +30,8 @@ export default function SearchBar({ session }: SearchBarProps) {
   return (
     <NavBarItemPlain useMargin>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email" className="sr-only">
-          Email
+        <label htmlFor="search" className="sr-only">
+          Search
         </label>
         <input
           type="search"
