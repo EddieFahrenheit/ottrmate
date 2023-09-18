@@ -7,7 +7,7 @@ import { authOptions } from "../lib/auth";
 export const metadata = {
   title: "Ottrmate",
   description:
-    "Ottrmate - search models and customize GPT to your business needs",
+    "Ottrmate - a playground for all things machine learning-related",
 };
 
 interface LayoutProps {

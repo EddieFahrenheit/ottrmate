@@ -3,9 +3,9 @@ import { MenuAsideItem } from "../interfaces";
 
 const menuAside: MenuAsideItem[] = [
   {
-    href: "/my_tools",
+    href: "/text_to_art",
     icon: mdiAccountCircle,
-    label: "My Tools",
+    label: "Text To Art",
   },
   {
     label: "Dropdown",
