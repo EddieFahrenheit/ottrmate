@@ -1,11 +1,12 @@
-from auth_token import auth_token
+# from auth_token import auth_token
+from os import environ as env
 from diffusers import DiffusionPipeline
 from fastapi import FastAPI, Response
-import torch
 from fastapi.middleware.cors import CORSMiddleware
 from io import BytesIO
-import base64 
+import base64
 
+auth_token = env['auth_token']
 app = FastAPI()
 
 app.add_middleware(
